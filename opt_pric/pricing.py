@@ -31,7 +31,7 @@ class Option :
         if self.payoff_type == payoff_type.asian :
             assert self.asian_period != None , "you must give a value for asian_period"
             self.asian_period = asian_period
-            assert self.asian_period <= self.matur/12*252 , " asian period should not be smaller than contract's maturity period"
+            assert self.asian_period <= self.matur/12*252 , " asian period should not be greater than contract's maturity period"
 
 
 
