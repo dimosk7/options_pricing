@@ -22,7 +22,7 @@ class Option :
     def __init__(self, spot, exer, rate, vol, matur, type, pay_type, asian_period = None):
 
         assert isinstance(type, contract_type) , " type must be instance of contract_type"
-        assert isinstance(pay_type , payoff_type ) , "pay_type must be instance of payoff_type"
+        assert isinstance(pay_type, payoff_type) , "pay_type must be instance of payoff_type"
         self.spot = spot
         self.exer = exer
         self.rate = rate
