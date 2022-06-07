@@ -33,13 +33,10 @@ class Option :
         self.asian_period = asian_period
         self.price = None
 
-
-
         if self.pay_type == payoff_type.asian :
             assert self.asian_period != None , "you must give a value for asian_period"
             self.asian_period = asian_period
             assert self.asian_period <= self.matur/12*252 , " asian period should not be smaller than contract's maturity period"
-
 
 
     def black_scholes(self):
