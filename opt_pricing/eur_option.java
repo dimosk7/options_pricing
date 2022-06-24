@@ -39,7 +39,7 @@ public class Option {
 	public double getMontePrice() {
 			
 		Random rand = new Random();
-		int num_sim = 400000;
+		int num_sim = 10000;
 		double dt = 1/252.0;
 		int days = (int) Math.round(matur/12*252);
 		double sum = 0.0;
